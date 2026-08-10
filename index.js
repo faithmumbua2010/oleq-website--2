@@ -1,29 +1,33 @@
-/*<section class="hero-v2">
-  <div class="hero-v2-badge">
-    <span class="hero-v2-dot"></span>
-    Trusted by 50+ businesses
-  </div>
 
-  <h1 class="hero-v2-title">
-    Transforming <span class="hero-v2-accent">ideas</span> into digital reality
-  </h1>
+//Initialize Swiper
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+  grabCursor:true,// the hand like cursor
+  spaceBetween:25,// space between the slides to not overlap
 
-  <p class="hero-v2-subtitle">
-    Tailored software solutions that elevate your business with cutting-edge
-    technology and innovative design.
-  </p>
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,  // make the dots clickable
+    dynamicBullets:true,// the descending-disappering like dots
+  },
 
-  <div class="hero-v2-actions">
-    <a href="#contact" class="hero-v2-btn-primary">
-      Get started
-      <i class="fa-solid fa-arrow-right"></i>
-    </a>
-    <a href="#services" class="hero-v2-btn-secondary">Explore services</a>
-  </div>
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next', //the >
+    prevEl: '.swiper-button-prev', // the <
+  },
 
-  <div class="hero-v2-visual">
-    <div class="hero-v2-orb">
-      <img src="Oleq_logo.png" alt="Oleq" />
-    </div>
-  </div>
-</section> */
+  //Responsive breakpoints
+
+  breakpoints: { // it is like a min-width in css but a bit different in js such that on screen size:
+    0:{
+        slidesPerView:1// 0-767 show one slide
+    },
+    768:{
+     slidesPerView:2 // 768-1023 show two slides
+  },
+   1024:{
+     slidesPerView:3// 1024+ show 3 slides
+  }
+}
