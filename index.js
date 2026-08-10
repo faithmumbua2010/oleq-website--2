@@ -31,3 +31,4 @@ const swiper = new Swiper('.slider-wrapper', {
      slidesPerView:3// 1024+ show 3 slides
   }
 }
+});

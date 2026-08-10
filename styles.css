@@ -245,11 +245,7 @@ a {
   transform: translateY(-2px);
 }
 
-
-
-
 .hero-section-visual {
-  display: relative;
 z-index: 1;
 margin-left: -100px;
 }
@@ -565,10 +561,10 @@ margin-left: -100px;
   color: #db2777;
 }
 
-*Testimonials section styles*/
+/*Testimonials section styles*/
 .testimonials-section{
   padding: 50px 0 100px;
-  background:var(--light-pink-color) ;
+  background:var(--dull-white-color) ;
 }
 
 .testimonials-section .slider-wrapper{
@@ -606,12 +602,12 @@ margin-left: -100px;
   width: 15px;
   height: 15px;
   opacity: 1;
-  background: var(--secondary-color);
+  background: var(--pink-color);
 }
 
 .testimonials-section .swiper-slide-button{
   margin-top: -50px;
-  color: var(--secondary-color);
+  color: var(--purple-color);
   transition: 0.3s ease;
 }
 
