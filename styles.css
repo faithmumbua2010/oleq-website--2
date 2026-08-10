@@ -639,14 +639,17 @@ margin-left: -100px;
 
 .contact-container {
   max-width:1200px;
-  margin: 0 ;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 120px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
   align-items: start;
 
 }
 
+.contact-info {
+  flex: 1;
+  min-width: 320px;
+}
 
 .contact-title {
   font-size: 2.4rem;
@@ -714,6 +717,8 @@ margin-left: -100px;
   border: 1px solid #e5e7eb;
   border-radius: 20px;
   padding: 40px;
+   flex: 1;
+  max-width: 560px;
 
 }
 
@@ -738,6 +743,8 @@ margin-left: -100px;
 
 .contact-form-group input,
 .contact-form-group textarea {
+  width: 100%;
+  min-width: 0;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 12px 14px;
