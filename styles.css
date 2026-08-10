@@ -23,6 +23,12 @@ a {
   --dull-white-color: rgba(255, 255, 255, 0.596);
   --primary-color: rgb(16, 91, 147);
   --gradient-accent: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  --blue-color:#2563eb; 
+  --bright-purple-color: #7c3aed;
+  --green-color:#059669;
+  --teal-color: #0d9488;;
+  --orange-color:#ea580c;
+  --pink-color:#db2777;
 
   /*Border radius */
   --border-radius-s: 5px;
@@ -368,7 +374,7 @@ margin-left: -100px;
   bottom: 0;
   width: 0;
   height: 4px;
-  background:var(--purple-color);  
+  background:var(--bright-purple-color);  
   transition: width 0.3s ease;
 }
 
@@ -507,7 +513,6 @@ margin-left: -100px;
 .service-card-6:hover::after {
   width: 100%;
 } 
-
 
 
 .service-icon {
