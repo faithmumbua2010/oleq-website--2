@@ -638,17 +638,15 @@ margin-left: -100px;
 }
 
 .contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width:1200px;
+  margin: 0 ;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 120px;
   align-items: start;
+
 }
 
-.contact-info{
-  margin-left: 0;
-}
 
 .contact-title {
   font-size: 2.4rem;
@@ -716,6 +714,7 @@ margin-left: -100px;
   border: 1px solid #e5e7eb;
   border-radius: 20px;
   padding: 40px;
+
 }
 
 .contact-form-row {
