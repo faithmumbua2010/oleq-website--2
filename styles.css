@@ -147,6 +147,7 @@ a {
    align-items: center;
    padding: 12px;
    
+   border: 2px solid red;
 }
 
 
@@ -236,37 +237,7 @@ a {
   transform: translateY(-2px);
 }
 
-* ---------- Hero trust stats ---------- */
-.hero-section-trust {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-bottom: 24px;
-}
- 
-.hero-section-trust-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
- 
-.hero-section-trust-number {
-  color: var(--white-color);
-  font-size: 1.4rem;
-  font-weight: var(--font-weight-semibold);
-}
- 
-.hero-section-trust-label {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
-}
- 
-.hero-section-trust-divider {
-  width: 1px;
-  height: 28px;
-  background: rgba(255, 255, 255, 0.15);
-}
+
 
 
 .hero-section-visual {
