@@ -138,16 +138,16 @@ a {
     transparent 60%
   ),
   #0c1527;
+  text-align: left;
 }
 
 .hero-container{
-   max-width: 1260px; 
    display: flex;
-   width: 100%;
+   flex-direction: row;
    align-items: center;
-   padding: 12px;
+   justify-content: space-between;
    
-   border: 2px solid red;
+
 }
 
 
@@ -180,7 +180,7 @@ a {
 
 .hero-section-title {
   color: var(--white-color);
-  font-size: 3.4rem;
+  font-size: 4.4rem;
   font-weight: var(--font-weight-semibold);
   line-height: 1.15;
   max-width: 780px;
@@ -196,9 +196,8 @@ a {
 
 .hero-section-subtitle {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   line-height: 1.6;
-  max-width: 560px;
   margin: 0 0 36px;
 }
 
