@@ -1,3 +1,11 @@
+const viewAllBtn = document.getElementById("view-all-btn");
+
+viewAllBtn.onclick = function () {
+    window.location.href = "blog.html";
+};
+
+
+
 
 //Initialize Swiper
 const swiper = new Swiper('.slider-wrapper', {
