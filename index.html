@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,10 +51,10 @@
           <a href="#contact" class="navbar-pill-contact">Contact us</a>
           <i class="fa-solid fa-circle-arrow-right"></i>
         </div>
-        <div class="open-close-btn">
+        <button class="open-close-btn" type="button" aria-label="Toggle navigation" aria-expanded="false">
           <i class="fa-solid fa-bars" style="color: #ffffff"></i>
           <i class="fa-solid fa-x" style="color: #ffffff"></i>
-        </div>
+        </button>
       </nav>
     </header>
 
@@ -374,7 +375,7 @@
 
       <div class="contact-form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your email" />
+        <input type="email" id="email" placeholder="Your email"  autocomplete="on"/>
       </div>
 
       <div class="contact-form-group">
