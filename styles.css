@@ -1268,42 +1268,6 @@ a {
 
 /*Responsiveness*/
 @media screen and (max-width: 1024px) {
-  .navbar-pill {
-    position: relative;
-    padding: 12px 20px;
-  }
-
-  .navbar-pill-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .contact-us {
-    display: flex;
-    margin-right: 0;
-  }
-
-  .open-close-btn {
-    display: none;
-  }
-
-  .website-header.menu-open .navbar-pill-links {
-    display: flex;
-  }
-
-  .website-header.menu-open .contact-us {
-    display: none;
-  }
-
-  .website-header.menu-open .open-close-btn .fa-bars {
-    display: none;
-  }
-
-  .website-header.menu-open .open-close-btn .fa-x {
-    display: block;
-  }
-
   .hero-container {
     flex-direction: column;
     gap: 40px;
@@ -1370,13 +1334,64 @@ a {
     width: 100%;
     max-width: 680px;
   }
-
-  .contact-form {
-    max-width: 680px;
-  }
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-pill {
+    position: relative;
+    padding: 12px 20px;
+  }
+
+  .navbar-pill-menu {
+    display: none;
+  }
+
+  .open-close-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+
+  .open-close-btn .fa-x {
+    display: none;
+  }
+
+  .website-header.menu-open .navbar-pill-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    right: 24px;
+    margin-top: 12px;
+    padding: 24px;
+    background: #0c1527;
+    border-radius: 16px;
+  }
+
+  .website-header.menu-open .navbar-pill-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .website-header.menu-open .contact-us {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .website-header.menu-open .open-close-btn .fa-bars {
+    display: none;
+  }
+
+  .website-header.menu-open .open-close-btn .fa-x {
+    display: inline-block;
+  }
+
   .hero-section {
     padding: 150px 18px 80px;
   }
