@@ -1501,6 +1501,10 @@ a {
     font-size: 1.9rem;
     text-align: center;
   }
+
+  .story-title {
+  margin-bottom: 28px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -1558,6 +1562,10 @@ a {
   .blog-title {
     font-size: 2rem;
   }
+
+  .story-title {
+  margin-bottom: 20px;
+}
 
   .blog-title-descr {
     font-size: 1rem;
