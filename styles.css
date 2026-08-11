@@ -294,6 +294,12 @@ a {
   padding-bottom: 6rem;
 }
 
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .services-content .text-content {
   display: flex;
   align-items: center;
