@@ -1,43 +1,66 @@
 const viewAllBtn = document.getElementById("view-all-btn");
 
-viewAllBtn.onclick = function () {
+if (viewAllBtn) {
+  viewAllBtn.addEventListener("click", () => {
     window.location.href = "blog.html";
-};
+  });
+}
 
+const menuToggle = document.querySelector(".open-close-btn");
+const header = document.querySelector(".website-header");
 
+if (menuToggle && header) {
+  menuToggle.addEventListener("click", () => {
+    header.classList.toggle("menu-open");
+    const isOpen = header.classList.contains("menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
 
+  document.querySelectorAll(".navbar-pill-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      header.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      header.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
 //Initialize Swiper
-const swiper = new Swiper('.slider-wrapper', {
-  loop: true,
-  grabCursor:true,// the hand like cursor
-  spaceBetween:25,// space between the slides to not overlap
+const sliderWrapper = document.querySelector(".slider-wrapper");
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable:true,  // make the dots clickable
-    dynamicBullets:true,// the descending-disappering like dots
-  },
+if (typeof Swiper !== "undefined" && sliderWrapper) {
+  new Swiper(sliderWrapper, {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 25,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next', //the >
-    prevEl: '.swiper-button-prev', // the <
-  },
-
-  //Responsive breakpoints
-
-  breakpoints: { // it is like a min-width in css but a bit different in js such that on screen size:
-    0:{
-        slidesPerView:1// 0-767 show one slide
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
     },
-    768:{
-     slidesPerView:2 // 768-1023 show two slides
-  },
-   1024:{
-     slidesPerView:3// 1024+ show 3 slides
-  }
-}
-});
 
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
