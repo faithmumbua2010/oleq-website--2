@@ -1273,34 +1273,9 @@ a {
     padding: 12px 20px;
   }
 
-  .navbar-pill-links,
-  .contact-us {
-    display: none;
-  }
-
-  .open-close-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.06);
-    cursor: pointer;
-  }
 
   .website-header.menu-open .navbar-pill-links {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    gap: 16px;
-    padding: 20px 24px 24px;
-    background: #0c1527;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .website-header.menu-open .contact-us {
@@ -1314,13 +1289,6 @@ a {
     background: rgba(74, 7, 167, 0.25);
   }
 
-  .website-header.menu-open .open-close-btn .fa-bars {
-    display: none;
-  }
-
-  .website-header.menu-open .open-close-btn .fa-x {
-    display: block;
-  }
 
   .hero-container {
     flex-direction: column;
@@ -1507,6 +1475,10 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+.open-close-btn{
+  display: inline;
+}
+
   .hero-section-title {
     font-size: 2.1rem;
   }
