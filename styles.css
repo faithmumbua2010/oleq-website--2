@@ -582,6 +582,12 @@ a {
   background: rgba(69, 43, 116, 0.075);
 }
 
+.testimonials-section .section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 .testimonials-section .section-title {
   color: rgb(36, 31, 31);
   font-weight: var(--font-weight-semibold);
