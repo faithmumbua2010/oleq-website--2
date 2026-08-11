@@ -83,6 +83,13 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+
+.navbar-pill-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 /*logo and text */
 .navbar-pill-logo {
   display: flex;
